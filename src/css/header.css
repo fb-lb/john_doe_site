@@ -1,0 +1,25 @@
+header a {
+    font-family: "Nunito Sans", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+h1 {
+  background-color: red;
+}
+
+header .navbar-brand:hover {
+  background-color: #298eff;
+}
+  
+header .link-light:hover {
+  opacity: 0.8;
+}
+
+header .navbar-toggler:focus {
+  box-shadow: 0 0 0 4px white;
+}
+
+header nav div .active {
+  box-shadow: 0 0 0 4px white;
+}
