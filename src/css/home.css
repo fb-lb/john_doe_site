@@ -1,0 +1,141 @@
+.home {
+  box-shadow: 5px 5px 10px -4px grey;
+  background-color:#F8F9FB;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.home > div:first-child {
+  margin-top: -40px;
+}
+
+.home > div:first-child > div {
+  background-color: rgba(0,0,0,0.3);
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home h1 {
+  text-align: center;
+  margin: 0px 0 20px 0;
+}
+
+.home h2 {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.home > div:first-child > div a {
+  margin-bottom: 20px;
+}
+
+.home > div:nth-of-type(2) {
+  box-shadow: 5px 5px 20px -10px grey, 0px 5px 15px -10px grey;
+  background-color: #FFFFFF;
+  padding: 70px 48px 48px 48px;
+  display: flex;
+  column-gap: 24px;
+}
+
+.home > div:nth-of-type(2) > div:first-child {
+ width: 100%;
+}
+
+.home > div:nth-of-type(2) > div:nth-of-type(2) {
+  width: 100%;
+ }
+
+.home div img {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+
+.home h3 {
+  border-bottom: 2px solid #0d6efd;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.home p {
+  margin: 5px 0 20px 0;
+  font-size: 1.2rem;
+}
+
+.home strong {
+  font-size: 1.2rem;
+}
+
+.home h4 {
+  font-size: 1.5rem;
+}
+
+.home section {
+  margin-bottom: 20px;
+}
+
+.home h5 {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .home > div:first-child {
+    background: url("/img/hero-bg-mobile.jpg") no-repeat center;
+    height: 768px;
+  }
+
+  .home h1 {
+    font-size: 3rem;
+  }
+
+  .home > div:nth-of-type(2) {
+    margin: 48px 0 96px 0;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .home > div:first-child {
+    background: url("/img/hero-bg-tablette.jpg") no-repeat center;
+    background-size: cover;
+    height: 1040px;
+  }
+
+  .home h1 {
+    font-size: 4.5rem;
+  }
+
+  .home h2 {
+    font-size: 2.5rem;
+  }
+
+  .home > div:nth-of-type(2) {
+    margin: 48px 45px 96px 45px;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .home > div:first-child {
+    background: url("/img/hero-bg.jpg") no-repeat center;
+    height: 810px;
+    background-size: cover;
+  }
+
+  .home h1 {
+    font-size: 4.2rem;
+  }
+
+  .home h2 {
+    font-size: 2.3rem;
+  }
+
+  .home > div:nth-of-type(2) {
+    margin: 48px 60px 96px 60px;
+  }
+}
