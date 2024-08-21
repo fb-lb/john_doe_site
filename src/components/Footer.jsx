@@ -25,9 +25,9 @@ export default function Footer() {
                         <p>Téléphone : 06 20 30 40 50</p>
                     </address>
                     <div>
-                        <a title="GitHub" href={user.html_url} target="_blank" rel="noreferrer nofollow"><i className="fa-brands fa-github fa-xl" style={{color: '#444444'}}></i></a>
-                        <a title="Twitter" href="#" target="_blank" rel="noreferrer nofollow"><i className="fa-brands fa-square-twitter fa-xl" style={{color: '#444444'}}></i></a>
-                        <a title="Linkedin" href="#" target="_blank" rel="noreferrer nofollow"><i className="fa-brands fa-linkedin fa-xl" style={{color: '#444444'}}></i></a>
+                        <a title="GitHub" href={user.html_url} target="_blank" rel="noreferrer nofollow"><i className="fa-brands fa-github fa-2xl" style={{color: '#444444'}}></i></a>
+                        <a title="Twitter" href="#" target="_blank" rel="noreferrer nofollow"><i className="fa-brands fa-square-twitter fa-2xl" style={{color: '#444444'}}></i></a>
+                        <a title="Linkedin" href="#" target="_blank" rel="noreferrer nofollow"><i className="fa-brands fa-linkedin fa-2xl" style={{color: '#444444'}}></i></a>
                     </div>
                 </section>
                 <section>

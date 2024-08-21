@@ -4,10 +4,6 @@ header a {
     font-size: 1rem;
 }
 
-h1 {
-  background-color: red;
-}
-
 header .navbar-brand:hover {
   background-color: #298eff;
 }
