@@ -59,5 +59,5 @@ export default function Footer() {
             </div>
             <small>&copy; Designed by John Doe</small>
         </footer>    
-    )
-};
+    );
+}
