@@ -1,0 +1,111 @@
+.services {
+    padding-bottom: 104px;
+    background-color:#F8F9FB;
+}
+
+.services h1 {
+    margin: 40px 20px 0px 20px;
+    text-align: center;
+    font-size: 1.9rem;
+}
+
+.services > p {
+    margin: 5px 20px 0px 20px;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.services .line {
+    border-bottom: solid 4px #0d6efd;
+    margin: 15px 39% 104px 39%;
+}
+
+.services > div:nth-of-type(3) {
+    display: flex;
+}
+
+.services > div > div {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 2px 2px 15px -10px grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    padding: 56px 0 90px 0;
+}
+
+.services svg {
+    margin-bottom: 20px;
+}
+
+.services div div h2 {
+    text-align: center;
+}
+
+.services div div p {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.services span {
+    text-decoration: underline dotted;
+    text-transform: uppercase;
+    text-underline-offset: 1.5px;
+}
+
+@media screen and (max-width: 768px) {
+    .services .banner {
+        height: 82px;
+        background: url("/img/banner-tablette.jpg") no-repeat bottom;
+        background-size: cover;
+    }
+
+    .services > div:nth-of-type(3) {
+        flex-direction: column;
+        gap: 16px; 
+        margin: 0 12px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .services .banner {
+        height: 197px;
+        background: url("/img/banner-tablette.jpg") no-repeat bottom;
+        background-size: cover;
+    }
+
+    .services h1 {
+        font-size: 2.5rem;
+    }
+
+    .services > div:nth-of-type(3) {
+        gap: 24px; 
+        margin: 0 57px;
+    }
+
+    .services > div > div {
+        flex: 1;
+    }  
+}
+
+@media screen and (min-width: 993px) {
+    .services .banner {
+        height: 157px;
+        background: url("/img/banner.jpg") no-repeat bottom;
+        background-size: cover;
+    }
+
+    .services h1 {
+        font-size: 3rem;
+    }
+    
+    .services > div:nth-of-type(3) {
+        gap: 24px; 
+        margin: 0 73px;
+    }
+
+    .services > div > div {
+        flex: 1;
+    }
+}
