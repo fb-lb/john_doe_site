@@ -26,7 +26,7 @@ export default function Home() {
                     </p>
                 </div>
                 <div>
-                    <img alt="homme tapant sur un ordinateur" src="/img/john-doe-about.jpg"></img>
+                    <img alt="Homme d'environ 30 ans chatain clair avec de la barbe assis dans un bureau." src="/img/john-doe-about.jpg"></img>
                     <h4>Mes compétences</h4>
                     <section>
                         <h5>HTML 90%</h5>
