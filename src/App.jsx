@@ -4,6 +4,7 @@ import Footer from './components/Footer.jsx';
 import Home from './pages/Home.jsx';
 import Services from './pages/Services.jsx';
 import Portfolio from './pages/Portfolio.jsx';
+import Blog from './pages/Blog.jsx';
 import { Routes, Route } from 'react-router-dom';
 
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="/" element={<Home/>}></Route>
         <Route path="/services" element={<Services/>}></Route>
         <Route path="/portfolio" element={<Portfolio/>}></Route>
+        <Route path="/blog" element={<Blog/>}></Route>
       </Routes>
       <Footer/>
     </>
