@@ -1,0 +1,92 @@
+.portfolio {
+    padding-bottom: 56px;
+    background-color:#F8F9FB;
+}
+
+.portfolio h1 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.portfolio > p {
+    text-align: center;
+    padding: 0 50px;
+    font-size: 1.1rem;
+}
+
+.portfolio .line {
+    border-bottom: solid 4px #0d6efd;
+    margin: 15px 39% 55px 39%;
+}
+
+.portfolio .row {
+    margin: 0;
+}
+
+.portfolio .col {
+    padding: 0 12px;
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio .banner {
+        height: 82px;
+        background: url("/img/banner-tablette.jpg") no-repeat bottom;
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .portfolio .banner {
+        height: 197px;
+        background: url("/img/banner-tablette.jpg") no-repeat bottom;
+        background-size: cover;
+    } 
+
+    .portfolio h1 {
+        font-size: 2.2rem;
+    }
+
+    .portfolio > p {
+        font-size: 1.2rem;
+    }
+
+    .portfolio .row {
+        padding: 0 45px;
+    }
+
+    .portfolio h2 {
+        font-size: 1.8rem;
+    }
+
+    .portfolio .card p {
+        font-size: 1.05rem;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .portfolio .banner {
+        height: 157px;
+        background: url("/img/banner.jpg") no-repeat bottom;
+        background-size: cover;
+    }
+
+    .portfolio h1 {
+        font-size: 3rem;
+    }
+
+    .portfolio > p {
+        font-size: 1.3rem;
+    }
+
+    .portfolio .row {
+        padding: 0 61px;
+    }
+
+    .portfolio h2 {
+        font-size: 2rem;
+    }
+
+    .portfolio .card p {
+        font-size: 1.1rem;
+    }
+}
