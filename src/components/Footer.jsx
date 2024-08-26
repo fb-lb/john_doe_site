@@ -1,5 +1,6 @@
 import '../css/footer.css';
 import { useState, useEffect } from "react";
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
 
@@ -37,7 +38,7 @@ export default function Footer() {
                         <li><span className="fa-li"><i className="fa-solid fa-angle-right" style={{color: '#0d6efd'}}></i></span><a href="#">A propos</a></li>
                         <li><span className="fa-li"><i className="fa-solid fa-angle-right" style={{color: '#0d6efd'}}></i></span><a href="#">Services</a></li>
                         <li><span className="fa-li"><i className="fa-solid fa-angle-right" style={{color: '#0d6efd'}}></i></span><a href="#">Me contacter</a></li>
-                        <li><span className="fa-li"><i className="fa-solid fa-angle-right" style={{color: '#0d6efd'}}></i></span><a href="#">Mentions légales</a></li>
+                        <li><span className="fa-li"><i className="fa-solid fa-angle-right" style={{color: '#0d6efd'}}></i></span><Link to="/mentions-legales">Mentions légales</Link></li>
                     </ul>
                 </section>
                 <section>

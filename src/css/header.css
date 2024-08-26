@@ -19,3 +19,13 @@ header .navbar-toggler:focus {
 header nav div .active {
   box-shadow: 0 0 0 4px white;
 }
+
+@media screen and (min-width: 993px) {
+  header .navbar-nav {
+    gap: 20px;
+  }
+
+  header .container {
+    padding: 0 20px;
+  }
+}
