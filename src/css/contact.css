@@ -1,0 +1,165 @@
+.contact {
+    background: url('img/contact-bg.jpg') no-repeat center;
+    display: flex;
+}
+
+.contact .filter {
+    background-color: rgba(0, 105, 255, 0.5);
+    padding: 16px 24px 96px 24px;
+    width: 100%;
+}
+
+.contact > div > div {
+    background-color: #FFFFFF;
+    box-shadow: 3px 6px 20px -10px black;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    justify-content: center;
+    padding-bottom: 55px;
+}
+
+.contact h1 {
+    margin-top: 50px;
+    text-align: center;
+    padding: 0 60px;
+}
+
+.contact > div > div > p {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.contact .line {
+    border-bottom: solid 4px #0d6efd;
+    margin: 15px 42% 60px 42%;
+}
+
+.contact > div > div > div:nth-of-type(2) {
+    margin: 0 49px;
+}
+
+
+.contact h2 {
+    margin-bottom: 32px;
+    border-bottom: 2px solid #0d6efd;
+    padding-bottom: 10px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    row-gap: 16px;
+}
+
+.contact button {
+    width: fit-content;
+}
+
+.contact address {
+    margin: 0;
+}
+
+.contact address p {
+    color: #444;
+}
+
+.contact iframe {
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+        background-size: 2800px 100%;
+    }
+    
+    .contact .filter {
+        padding: 16px 24px 96px 24px;
+    }
+
+    .contact > div > div > p {
+        padding: 0 61px;
+    }
+
+    .contact h2 {
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .contact {
+        background-size:auto 100%;
+    }
+    
+    .contact .filter {
+        padding: 16px 45px 96px 45px;
+    }
+    
+    .contact h1 {
+        font-size: 2.2rem;
+    }
+
+    .contact > div > div > p {
+        padding: 0 110px;
+    }
+    
+    .contact > div > div > div:nth-of-type(2) {
+        display: flex;
+        column-gap: 24px;
+    }
+
+    .contact section {
+        flex: 1 1 50%;
+    }
+
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    .contact textarea {
+        height: calc(5rem + 4*7.5px + 22px);
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .contact {
+        background-size:auto 100%;
+    }
+    
+    .contact .filter {
+        padding: 16px 61px 96px 61px;
+    }
+    
+    .contact h1 {
+        font-size: 2.9rem;
+    }
+
+    .contact > div > div > p {
+        padding: 0 70px;
+        font-size: 1.25rem;
+    }
+
+    .contact > div > div > div:nth-of-type(2) {
+        display: flex;
+        column-gap: 24px;
+    }
+
+    .contact section {
+        flex: 1 1 50%;
+    }
+
+    .contact h2 {
+        font-size: 2.2rem;
+    }
+
+    .contact address p {
+        font-size: 1.1rem;
+    }
+
+    .contact textarea {
+        height: calc(6rem + 5*7.5px + 22px);
+    }
+}
