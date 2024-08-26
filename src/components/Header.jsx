@@ -40,7 +40,7 @@ export default function Header() {
                             <Link className="nav-link text-white-50 text-uppercase link-light" to="/blog">Blog</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-white-50 text-uppercase link-light" href="#">Me contacter</a>
+                            <Link className="nav-link text-white-50 text-uppercase link-light" to="/contact">Me contacter</Link>
                         </li>
                     </ul>
                 </div>
