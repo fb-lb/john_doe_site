@@ -1,7 +1,7 @@
 header a {
-    font-family: "Nunito Sans", Arial, sans-serif;
-    font-weight: 600;
-    font-size: 1rem;
+  font-family: "Nunito Sans", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
 }
 
 header .navbar-brand:hover {
@@ -16,7 +16,7 @@ header .navbar-toggler:focus {
   box-shadow: 0 0 0 4px white;
 }
 
-header nav div .active {
+header .activeButton {
   box-shadow: 0 0 0 4px white;
 }
 
@@ -28,4 +28,8 @@ header nav div .active {
   header .container {
     padding: 0 20px;
   }
+}
+
+header  .navbar-nav .nav-link.activeLink {
+  color: white;
 }

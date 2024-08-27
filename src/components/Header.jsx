@@ -11,10 +11,20 @@ export default function Header() {
     function activeButtonClass() {
         isBurgerMenuActive = !isBurgerMenuActive;
         if (isBurgerMenuActive) {
-            setButtonClass (buttonClass + " active");
+            setButtonClass (buttonClass + " activeButton");
         } else {
             setButtonClass ("navbar-toggler border border-secondary border-opacity-50");
         };
+    }
+
+    const allLink = document.querySelectorAll('.nav-link');
+
+    function active(e) {
+        allLink.forEach(link => {
+            link.className= 'nav-link text-white-50 text-uppercase link-light';
+        });
+        e.target.className= 'activeLink nav-link text-uppercase';
+        console.log(e.target);
     }
 
     return (
@@ -28,19 +38,19 @@ export default function Header() {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav ms-auto">
                         <li className="nav-item">
-                            <Link className="nav-link text-white-50 text-uppercase link-light" to="/">Accueil</Link>
+                            <Link className="nav-link text-white-50 text-uppercase link-light" onClick={active} to="/">Accueil</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link text-white-50 text-uppercase link-light" to="/services">Services</Link>
+                            <Link className="nav-link text-white-50 text-uppercase link-light" onClick={active} to="/services">Services</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link text-white-50 text-uppercase link-light" to="/portfolio">Réalisations</Link>
+                            <Link className="nav-link text-white-50 text-uppercase link-light" onClick={active} to="/portfolio">Réalisations</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link text-white-50 text-uppercase link-light" to="/blog">Blog</Link>
+                            <Link className="nav-link text-white-50 text-uppercase link-light" onClick={active} to="/blog">Blog</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link text-white-50 text-uppercase link-light" to="/contact">Me contacter</Link>
+                            <Link className="nav-link text-white-50 text-uppercase link-light" onClick={active} to="/contact">Me contacter</Link>
                         </li>
                     </ul>
                 </div>

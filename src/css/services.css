@@ -24,7 +24,7 @@
     display: flex;
 }
 
-.services > div > div {
+.services section {
     background-color: #FFFFFF;
     border-radius: 15px;
     box-shadow: 2px 2px 15px -10px grey;
@@ -39,11 +39,11 @@
     margin-bottom: 20px;
 }
 
-.services div div h2 {
+.services section h2 {
     text-align: center;
 }
 
-.services div div p {
+.services section p {
     text-align: center;
     padding: 0 20px;
 }
@@ -84,7 +84,7 @@
         margin: 0 57px;
     }
 
-    .services > div > div {
+    .services section {
         flex: 1;
     }  
 }
@@ -105,7 +105,7 @@
         margin: 0 73px;
     }
 
-    .services > div > div {
+    .services section {
         flex: 1;
     }
 }

@@ -8,6 +8,7 @@
 
 h1, h2, h3, h4, h5 {
   font-weight: 600;
+  color: #1e1e1e;
 }
 
 h1 {
@@ -33,11 +34,13 @@ h5 {
 strong {
   font-weight: 600;
   font-size: 1rem;
+  color: black;
 }
 
 p {
   margin: 0;
   font-size: 1rem;
+  color: #444;
 }
 
 a {
@@ -46,5 +49,9 @@ a {
 
 li {
   font-size: 1rem;
+}
+
+address {
+  color: #444;
 }
 

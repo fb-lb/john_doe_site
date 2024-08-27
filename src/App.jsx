@@ -15,11 +15,16 @@ import { useEffect } from 'react';
 export default function App() {
 
   const location = useLocation();
-  // Not display header and footer on Profil Page
+  let metaRobots = document.createElement("meta");
+  metaRobots.setAttribute("name", "robots");
+  metaRobots.setAttribute("content", "noindex");
+  let head = document.querySelector('head');
+  
   useEffect(() => {
+      // Not display header and footer on Profil Page
       let header = document.querySelector('header');
       let footer = document.querySelector('footer');
-      console.log(location.pathname);
+      
       if (location.pathname==="/profil"){
           if (header!= null) {
               header.classList.add("display");
@@ -31,7 +36,14 @@ export default function App() {
           header.classList.remove("display");
           footer.classList.remove("display");
       }
-  }, [location]);
+
+      // No index on legal mentions page
+      if (location.pathname === "/mentions-legales" && !head.lastChild.hasAttribute("name")){
+        head.appendChild(metaRobots);
+      } else if (location.pathname != "/mentions-legales" && head.lastChild.hasAttribute("name")) {
+        head.lastChild.remove();
+      }
+  });
 
   return (
     <>
