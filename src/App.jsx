@@ -7,9 +7,43 @@ import Portfolio from './pages/Portfolio.jsx';
 import Blog from './pages/Blog.jsx';
 import Contact from './pages/Contact.jsx';
 import LegalMentions from './pages/LegalMentions.jsx';
+import Profil from './pages/Profil.jsx';
 import { Routes, Route } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 
 export default function App() {
+
+  const location = useLocation();
+  let metaRobots = document.createElement("meta");
+  metaRobots.setAttribute("name", "robots");
+  metaRobots.setAttribute("content", "noindex");
+  let head = document.querySelector('head');
+  
+  useEffect(() => {
+      // Not display header and footer on Profil Page
+      let header = document.querySelector('header');
+      let footer = document.querySelector('footer');
+      
+      if (location.pathname==="/profil"){
+          if (header!= null) {
+              header.classList.add("display");
+          }
+          if (footer!= null) {
+              footer.classList.add("display");
+          }
+      } else {
+          header.classList.remove("display");
+          footer.classList.remove("display");
+      }
+
+      // No index on legal mentions page
+      if (location.pathname === "/mentions-legales" && !head.lastChild.hasAttribute("name")){
+        head.appendChild(metaRobots);
+      } else if (location.pathname != "/mentions-legales" && head.lastChild.hasAttribute("name")) {
+        head.lastChild.remove();
+      }
+  });
 
   return (
     <>
@@ -21,6 +55,7 @@ export default function App() {
         <Route path="/blog" element={<Blog/>}></Route>
         <Route path="/contact" element={<Contact/>}></Route>
         <Route path="/mentions-legales" element={<LegalMentions/>}></Route>
+        <Route path="/profil" element={<Profil/>}></Route>
       </Routes>
       <Footer/>
     </>

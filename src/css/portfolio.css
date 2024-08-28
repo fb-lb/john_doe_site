@@ -3,32 +3,32 @@
     background-color:#F8F9FB;
 }
 
-.portfolio h1 {
+.portfolio__title {
     margin-top: 50px;
     text-align: center;
 }
 
-.portfolio > p {
+.portoflio__principal-text {
     text-align: center;
     padding: 0 50px;
     font-size: 1.1rem;
 }
 
-.portfolio .line {
+.portfolio__line {
     border-bottom: solid 4px #0d6efd;
     margin: 15px 39% 55px 39%;
 }
 
-.portfolio .row {
+.portfolio__achievement-list {
     margin: 0;
 }
 
-.portfolio .col {
+.portfolio__achievement {
     padding: 0 12px;
 }
 
 @media screen and (max-width: 768px) {
-    .portfolio .banner {
+    .portfolio__banner {
         height: 82px;
         background: url("/img/banner-tablette.jpg") no-repeat bottom;
         background-size: cover;
@@ -36,57 +36,57 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
-    .portfolio .banner {
+    .portfolio__banner {
         height: 197px;
         background: url("/img/banner-tablette.jpg") no-repeat bottom;
         background-size: cover;
     } 
 
-    .portfolio h1 {
+    .portfolio__title {
         font-size: 2.2rem;
     }
 
-    .portfolio > p {
+    .portoflio__principal-text {
         font-size: 1.2rem;
     }
 
-    .portfolio .row {
+    .portfolio__achievement-list {
         padding: 0 45px;
     }
 
-    .portfolio h2 {
+    .portfolio__achievement-title {
         font-size: 1.8rem;
     }
 
-    .portfolio .card p {
+    .portfolio__achievement-text {
         font-size: 1.05rem;
     }
 }
 
 @media screen and (min-width: 993px) {
-    .portfolio .banner {
+    .portfolio__banner {
         height: 157px;
         background: url("/img/banner.jpg") no-repeat bottom;
         background-size: cover;
     }
 
-    .portfolio h1 {
+    .portfolio__title {
         font-size: 3rem;
     }
 
-    .portfolio > p {
+    .portoflio__principal-text {
         font-size: 1.3rem;
     }
 
-    .portfolio .row {
+    .portfolio__achievement-list {
         padding: 0 61px;
     }
 
-    .portfolio h2 {
+    .portfolio__achievement-title {
         font-size: 2rem;
     }
 
-    .portfolio .card p {
+    .portfolio__achievement-text {
         font-size: 1.1rem;
     }
 }

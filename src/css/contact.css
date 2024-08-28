@@ -3,13 +3,12 @@
     display: flex;
 }
 
-.contact .filter {
+.contact__filter {
     background-color: rgba(0, 105, 255, 0.5);
-    padding: 16px 24px 96px 24px;
     width: 100%;
 }
 
-.contact > div > div {
+.contact__content {
     background-color: #FFFFFF;
     box-shadow: 3px 6px 20px -10px black;
     display: flex;
@@ -19,34 +18,34 @@
     padding-bottom: 55px;
 }
 
-.contact h1 {
+.contact__title {
     margin-top: 50px;
     text-align: center;
     padding: 0 60px;
 }
 
-.contact > div > div > p {
+.contact__text {
     text-align: center;
     font-size: 1.1rem;
 }
 
-.contact .line {
+.contact__line {
     border-bottom: solid 4px #0d6efd;
     margin: 15px 42% 60px 42%;
 }
 
-.contact > div > div > div:nth-of-type(2) {
+.contact__block-sections {
     margin: 0 49px;
 }
 
 
-.contact h2 {
+.contact .block-form__title, .contact .block-address__title {
     margin-bottom: 32px;
     border-bottom: 2px solid #0d6efd;
     padding-bottom: 10px;
 }
 
-.contact form {
+.contact .block-form__form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,19 +54,11 @@
     row-gap: 16px;
 }
 
-.contact button {
-    width: fit-content;
-}
-
-.contact address {
+.contact .block-address__address {
     margin: 0;
 }
 
-.contact address p {
-    color: #444;
-}
-
-.contact iframe {
+.contact .block-address__map {
     margin-top: 15px;
 }
 
@@ -76,15 +67,15 @@
         background-size: 2800px 100%;
     }
     
-    .contact .filter {
+    .contact__filter {
         padding: 16px 24px 96px 24px;
     }
 
-    .contact > div > div > p {
+    .contact__text {
         padding: 0 61px;
     }
 
-    .contact h2 {
+    .contact .block-form__title, .contact .block-address__title {
         font-size: 1.7rem;
     }
 }
@@ -94,32 +85,32 @@
         background-size:auto 100%;
     }
     
-    .contact .filter {
+    .contact__filter {
         padding: 16px 45px 96px 45px;
     }
     
-    .contact h1 {
+    .contact__title {
         font-size: 2.2rem;
     }
 
-    .contact > div > div > p {
+    .contact__text {
         padding: 0 110px;
     }
     
-    .contact > div > div > div:nth-of-type(2) {
+    .contact__block-sections {
         display: flex;
         column-gap: 24px;
     }
 
-    .contact section {
+    .contact .block-form, .contact .block-address {
         flex: 1 1 50%;
     }
 
-    .contact h2 {
+    .contact .block-form__title, .contact .block-address__title {
         font-size: 2rem;
     }
 
-    .contact textarea {
+    .contact .block-form__form-message {
         height: calc(5rem + 4*7.5px + 22px);
     }
 }
@@ -129,37 +120,37 @@
         background-size:auto 100%;
     }
     
-    .contact .filter {
+    .contact__filter {
         padding: 16px 61px 96px 61px;
     }
     
-    .contact h1 {
+    .contact__title {
         font-size: 2.9rem;
     }
 
-    .contact > div > div > p {
+    .contact__text {
         padding: 0 70px;
         font-size: 1.25rem;
     }
 
-    .contact > div > div > div:nth-of-type(2) {
+    .contact__block-sections {
         display: flex;
         column-gap: 24px;
     }
 
-    .contact section {
+    .contact .block-form, .contact .block-address {
         flex: 1 1 50%;
     }
 
-    .contact h2 {
+    .contact .block-form__title, .contact .block-address__title {
         font-size: 2.2rem;
     }
 
-    .contact address p {
-        font-size: 1.1rem;
+    .contact .block-form__form-message {
+        height: calc(6rem + 5*7.5px + 22px);
     }
 
-    .contact textarea {
-        height: calc(6rem + 5*7.5px + 22px);
+    .contact .block-address__address-text {
+        font-size: 1.1rem;
     }
 }

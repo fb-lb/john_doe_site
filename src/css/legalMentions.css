@@ -1,73 +1,77 @@
-.legalMentions {
+.legal-mentions {
     background-color:#F8F9FB;
 }
 
-.legalMentions h1 {
+.legal-mentions__title {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.legalMentions .line {
+.legal-mentions__line {
     border-bottom: solid 4px #0d6efd;
     margin: 0 38.4% 48px 38.4%;
 }
 
-.legalMentions .accordion-button {
+.legal-mentions__item-button {
     color: #0d6efd;
     font-weight: 600;
 }
 
-.legalMentions .collapsed {
+.legal-mentions__item-button.collapsed {
     color: rgb(33, 37, 41);
 }
 
-.legalMentions a {
-    text-decoration: none;
-    display: block;
+.legal-mentions__item-address {
+    display: flex;
+    flex-direction: column;
 }
 
-.legalMentions a:hover {
+.legal-mentions__item-link {
+    text-decoration: none;
+}
+
+.legal-mentions__item-link:hover {
     text-decoration: underline;
 }
 
-.legalMentions #collapseThree p {
+.legal-mentions__item-text {
     margin-bottom: 15px;
 }
 
 @media screen and (max-width: 768px) {
-    .legalMentions {
+    .legal-mentions {
         padding: 24px 12px;
     }
 
-    .legalMentions h1 {
+    .legal-mentions__title {
         font-size: 1.9rem;
     }
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
-    .legalMentions {
+    .legal-mentions {
         padding: 24px 57px;
     }
 
-    .legalMentions h1 {
+    .legal-mentions__title {
         font-size: 2.4rem;
     }
 
-    .legalMentions h3 {
+    .legal-mentions__item-title {
         font-size: 1.65rem;
     }
 }
 
 @media screen and (min-width: 993px) {
-    .legalMentions {
+    .legal-mentions {
         padding: 24px 73px;
     }
 
-    .legalMentions h1 {
+    .legal-mentions__title {
         font-size: 3rem;
     }
 
-    .legalMentions h3 {
+    .legal-mentions__item-title {
         font-size: 1.8rem;
     }
 }
