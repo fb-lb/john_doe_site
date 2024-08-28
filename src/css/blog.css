@@ -3,32 +3,32 @@
     background-color:#F8F9FB;
 }
 
-.blog h1 {
+.blog__title {
     margin-top: 50px;
     text-align: center;
 }
 
-.blog > p {
+.blog__text {
     text-align: center;
     padding: 0 20px;
     font-size: 1.1rem;
 }
 
-.blog .line {
+.blog__line {
     border-bottom: solid 4px #0d6efd;
     margin: 15px 39% 56px 39%;
 }
 
-.blog .row {
+.blog__article-list {
     margin: 0;
 }
 
-.blog .col {
+.blog__article {
     padding: 0 12px;
 }
 
 @media screen and (max-width: 768px) {
-    .blog .banner {
+    .blog__banner {
         height: 82px;
         background: url("/img/banner-tablette.jpg") no-repeat bottom;
         background-size: cover;
@@ -36,57 +36,57 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
-    .blog .banner {
+    .blog__banner {
         height: 197px;
         background: url("/img/banner-tablette.jpg") no-repeat bottom;
         background-size: cover;
     } 
 
-    .blog h1 {
+    .blog__title {
         font-size: 2.2rem;
     }
 
-    .blog > p {
+    .blog__text {
         font-size: 1.2rem;
     }
 
-    .blog .row {
+    .blog__article-list {
         padding: 0 45px;
     }
 
-    .blog h2 {
+    .blog__article-title {
         font-size: 1.8rem;
     }
 
-    .blog .card p {
+    .blog__article-text {
         font-size: 1.05rem;
     }
 }
 
 @media screen and (min-width: 993px) {
-    .blog .banner {
+    .blog__banner {
         height: 157px;
         background: url("/img/banner.jpg") no-repeat bottom;
         background-size: cover;
     }
 
-    .blog h1 {
+    .blog__title {
         font-size: 3rem;
     }
 
-    .blog > p {
+    .blog__text {
         font-size: 1.3rem;
     }
 
-    .blog .row {
+    .blog__article-list {
         padding: 0 61px;
     }
 
-    .blog h2 {
+    .blog__article-title {
         font-size: 2rem;
     }
 
-    .blog .card p {
+    .blog__article-text {
         font-size: 1.1rem;
     }
 }

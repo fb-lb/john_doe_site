@@ -1,5 +1,8 @@
 # John Doe Website (React + Vite)
 
+This is the John Doe website.
+To access to profil information, add the pathname '/profil' to the domain name.
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:

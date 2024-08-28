@@ -3,12 +3,12 @@ import { PropTypes } from 'prop-types';
 
 function Project(props) {
     return (
-        <div className='col'>
+        <div className='blog__article col'>
             <article className="card">
                 <img src={props.srcImg} className="card-img-top" alt={props.altImg}></img>
                 <div className="card-body">
-                    <h2 className="card-title">{props.title}</h2>
-                    <p className="card-text mb-3">{props.description}</p>
+                    <h2 className="blog__article-title card-title">{props.title}</h2>
+                    <p className="blog__article-text card-text mb-3">{props.description}</p>
                     <a className="btn btn-primary" href='#' target="_blank" rel="noreferrer nofollow">Lire la suite</a>     
                 </div>
                 <p className="card-footer">Publié le <time dateTime={props.timeAttr}>{props.date}</time></p>
@@ -29,11 +29,11 @@ Project.propTypes = {
 export default function Blog() {
     return(
         <main className="blog">
-            <div className='banner'></div>
-            <h1 className='text-uppercase'>Blog</h1>
-            <p>Retrouvez ici quelques articles sur le développement web.</p>
-            <div className='line'></div>
-            <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3'>
+            <div className='blog__banner'></div>
+            <h1 className='blog__title text-uppercase'>Blog</h1>
+            <p className='blog__text'>Retrouvez ici quelques articles sur le développement web.</p>
+            <div className='blog__line'></div>
+            <div className='blog__article-list row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3'>
                 <Project
                     srcImg="/img/blog/coder.jpg"
                     altImg="Code HTML dans un environnement de développement intégré."

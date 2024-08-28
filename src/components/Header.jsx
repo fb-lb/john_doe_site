@@ -1,6 +1,6 @@
 import '../css/header.css';
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 let isBurgerMenuActive = false;
 
@@ -11,21 +11,32 @@ export default function Header() {
     function activeButtonClass() {
         isBurgerMenuActive = !isBurgerMenuActive;
         if (isBurgerMenuActive) {
-            setButtonClass (buttonClass + " activeButton");
+            setButtonClass (buttonClass + " navbar-toggler--active");
         } else {
             setButtonClass ("navbar-toggler border border-secondary border-opacity-50");
         };
     }
 
     const allLink = document.querySelectorAll('.nav-link');
+    const location = useLocation();
 
-    function active(e) {
+    useEffect(() => {
         allLink.forEach(link => {
             link.className= 'nav-link text-white-50 text-uppercase link-light';
         });
-        e.target.className= 'activeLink nav-link text-uppercase';
-        console.log(e.target);
-    }
+
+        if(location.pathname==='/'){
+            document.getElementById('home-link').className = 'activeLink nav-link text-uppercase';
+        } else if (location.pathname==='/services') {
+            document.getElementById('services-link').className = 'activeLink nav-link text-uppercase';
+        } else if (location.pathname==='/portfolio') {
+            document.getElementById('portfolio-link').className = 'activeLink nav-link text-uppercase';
+        } else if (location.pathname==='/blog') {
+            document.getElementById('blog-link').className = 'activeLink nav-link text-uppercase';
+        } else if (location.pathname==='/contact') {
+            document.getElementById('contact-link').className = 'activeLink nav-link text-uppercase';
+        }
+    }, [location]);
 
     return (
     <header>
@@ -38,19 +49,19 @@ export default function Header() {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav ms-auto">
                         <li className="nav-item">
-                            <Link className="nav-link text-white-50 text-uppercase link-light" onClick={active} to="/">Accueil</Link>
+                            <Link id='home-link' className="nav-link text-white-50 text-uppercase link-light" to="/">Accueil</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link text-white-50 text-uppercase link-light" onClick={active} to="/services">Services</Link>
+                            <Link id='services-link' className="nav-link text-white-50 text-uppercase link-light" to="/services">Services</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link text-white-50 text-uppercase link-light" onClick={active} to="/portfolio">Réalisations</Link>
+                            <Link id='portfolio-link' className="nav-link text-white-50 text-uppercase link-light" to="/portfolio">Réalisations</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link text-white-50 text-uppercase link-light" onClick={active} to="/blog">Blog</Link>
+                            <Link id='blog-link' className="nav-link text-white-50 text-uppercase link-light" to="/blog">Blog</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link text-white-50 text-uppercase link-light" onClick={active} to="/contact">Me contacter</Link>
+                            <Link id='contact-link' className="nav-link text-white-50 text-uppercase link-light" to="/contact">Me contacter</Link>
                         </li>
                     </ul>
                 </div>

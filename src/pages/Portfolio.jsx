@@ -3,15 +3,15 @@ import { PropTypes } from 'prop-types';
 
 function Project(props) {
     return (
-        <div className='col'>
+        <div className='portfolio__achievement col'>
             <article className="card text-center">
                 <img src={props.srcImg} className="card-img-top" alt={props.altImg}></img>
                 <div className="card-body">
-                    <h2 className="card-title">{props.title}</h2>
-                    <p className="card-text mb-3">{props.description}</p>
+                    <h2 className="portfolio__achievement-title card-title">{props.title}</h2>
+                    <p className="portfolio__achievement-text card-text mb-3">{props.description}</p>
                     <a className="btn btn-outline-primary" title={props.linkTitle} href={props.link} target="_blank" rel="noreferrer nofollow">Voir</a>     
                 </div>
-                <p className="card-footer">{props.technology}</p>
+                <p className="portfolio__achievement-text card-footer">{props.technology}</p>
             </article>
         </div>
     ); 
@@ -30,11 +30,11 @@ Project.propTypes = {
 export default function Portfolio() {
     return (
         <main className="portfolio">
-            <div className='banner'></div>
-            <h1 className='text-uppercase'>Portfolio</h1>
-            <p>Voici quelques-unes de mes réalisations.</p>
-            <div className='line'></div>
-            <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3'>
+            <div className='portfolio__banner'></div>
+            <h1 className='portfolio__title text-uppercase'>Portfolio</h1>
+            <p className='portoflio__principal-text'>Voici quelques-unes de mes réalisations.</p>
+            <div className='portfolio__line'></div>
+            <div className='portfolio__achievement-list row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3'>
                 <Project
                     srcImg="/img/portfolio/fresh-food.jpg"
                     altImg="Panier de légumes vue du dessus contenant une aubergine, un poivron jaune, des radis, de la salade et du persil"

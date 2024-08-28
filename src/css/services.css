@@ -3,28 +3,28 @@
     background-color:#F8F9FB;
 }
 
-.services h1 {
+.services__h1 {
     margin: 40px 20px 0px 20px;
     text-align: center;
     font-size: 1.9rem;
 }
 
-.services > p {
+.services__principal-text {
     margin: 5px 20px 0px 20px;
     text-align: center;
     font-size: 1.25rem;
 }
 
-.services .line {
+.services__line {
     border-bottom: solid 4px #0d6efd;
     margin: 15px 39% 104px 39%;
 }
 
-.services > div:nth-of-type(3) {
+.services__list {
     display: flex;
 }
 
-.services section {
+.services__service {
     background-color: #FFFFFF;
     border-radius: 15px;
     box-shadow: 2px 2px 15px -10px grey;
@@ -35,33 +35,33 @@
     padding: 56px 0 90px 0;
 }
 
-.services svg {
+.services__icon-service {
     margin-bottom: 20px;
 }
 
-.services section h2 {
+.services__h2 {
     text-align: center;
 }
 
-.services section p {
+.services__text-service {
     text-align: center;
     padding: 0 20px;
 }
 
-.services span {
+.services__underline-text {
     text-decoration: underline dotted;
     text-transform: uppercase;
     text-underline-offset: 1.5px;
 }
 
 @media screen and (max-width: 768px) {
-    .services .banner {
+    .services__banner {
         height: 82px;
         background: url("/img/banner-tablette.jpg") no-repeat bottom;
         background-size: cover;
     }
 
-    .services > div:nth-of-type(3) {
+    .services__list {
         flex-direction: column;
         gap: 16px; 
         margin: 0 12px;
@@ -69,43 +69,43 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
-    .services .banner {
+    .services__banner {
         height: 197px;
         background: url("/img/banner-tablette.jpg") no-repeat bottom;
         background-size: cover;
     }
 
-    .services h1 {
+    .services__h1 {
         font-size: 2.5rem;
     }
 
-    .services > div:nth-of-type(3) {
+    .services__list {
         gap: 24px; 
         margin: 0 57px;
     }
 
-    .services section {
+    .services__service {
         flex: 1;
     }  
 }
 
 @media screen and (min-width: 993px) {
-    .services .banner {
+    .services__banner {
         height: 157px;
         background: url("/img/banner.jpg") no-repeat bottom;
         background-size: cover;
     }
 
-    .services h1 {
+    .services__h1 {
         font-size: 3rem;
     }
     
-    .services > div:nth-of-type(3) {
+    .services__list {
         gap: 24px; 
         margin: 0 73px;
     }
 
-    .services section {
+    .services__service {
         flex: 1;
     }
 }

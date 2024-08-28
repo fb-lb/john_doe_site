@@ -13,32 +13,32 @@ footer h4 {
   font-size: 1.2rem;
 }
 
-footer div div {
+footer .footer__social-networks {
   width: 160px;
   display: flex;
   justify-content: space-around;
   margin-bottom: 5px;
 }
 
-footer a:hover {
-  color: #0d6efd; 
-  font-weight: 600;
-}
-
-footer ul a {
+footer .footer__link {
   color: #444;
   text-decoration: none;
 }
 
-footer .fa-ul {
+footer .footer__link:hover {
+  color: #0d6efd; 
+  font-weight: 600;
+}
+
+footer .footer__link-list {
   margin-left: 23px;
 }
 
-footer .fa-li {
+footer .footer__icon-list {
   width: 45px;
 }
 
-small {
+footer .footer__copyright {
   background-color: #1e1e1e;
   color: #EEE;
   display: block;
@@ -48,7 +48,6 @@ small {
 }
 
 @media screen and (max-width: 768px) {
-
   footer section {
     width: 100%;
   }
