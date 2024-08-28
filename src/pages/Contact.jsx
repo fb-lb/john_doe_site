@@ -56,7 +56,7 @@ export default function Contact() {
                                 <input className='form-control' name='mail' type="email" placeholder='Votre adresse email' maxLength={70} value={mail} onChange={e => setMail(e.target.value)}/>
                                 <input className='form-control' name='tel' type="tel" placeholder='Votre numéro de téléphone' maxLength={30} value={tel} onChange={e => setTel(e.target.value)}/>
                                 <input className='form-control' name='subject' type="text" placeholder='Sujet' maxLength={100} value={subject} onChange={e => setSubject(e.target.value)}/>
-                                <textarea className='block-form__form-message form-control' name="message" id="message" placeholder='Votre message' rows='4' maxLength={1500} value={message} onChange={e => setMessage(e.target.value)}></textarea>
+                                <textarea className='block-form__form-message form-control' name="message" id="message" placeholder='Votre message' rows='4' maxLength='1500' value={message} onChange={e => setMessage(e.target.value)}></textarea>
                                 <button className='btn btn-primary' type='submit' onClick={handleSubmit}>Envoyer</button>
                             </form>
                         </section>

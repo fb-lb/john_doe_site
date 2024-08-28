@@ -5,7 +5,7 @@ function Project(props) {
     return (
         <div className='portfolio__achievement col'>
             <article className="card text-center">
-                <img src={props.srcImg} className="card-img-top" alt={props.altImg}></img>
+                <img src={props.srcImg} className="card-img-top" alt={props.altImg}/>
                 <div className="card-body">
                     <h2 className="portfolio__achievement-title card-title">{props.title}</h2>
                     <p className="portfolio__achievement-text card-text mb-3">{props.description}</p>
