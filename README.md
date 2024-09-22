@@ -1,7 +1,8 @@
 # John Doe Website (React + Vite)
 
 This is the John Doe website.
-To access to profil information, add the pathname '/profil' to the domain name.
+URL to home page : https://hyle.alwaysdata.net/john-doe-website/
+URL to access to profil information : https://hyle.alwaysdata.net/john-doe-website/profil/
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
