@@ -26,7 +26,7 @@ export default function Home() {
                     </p>
                 </div>
                 <div className='about__block'>
-                    <img className='about__image' alt="Homme d'environ 30 ans chatain clair avec de la barbe assis dans un bureau." src="/img/john-doe-about.jpg"/>
+                    <img className='about__image' alt="Homme d'environ 30 ans chatain clair avec de la barbe assis dans un bureau." src="/assets/img/john-doe-about.jpg"/>
                     <h4 className='about__h4'>Mes compétences</h4>
                     <section className='about__skill'>
                         <h5 className='about__h5'>HTML 90%</h5>

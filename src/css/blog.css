@@ -30,7 +30,7 @@
 @media screen and (max-width: 768px) {
     .blog__banner {
         height: 82px;
-        background: url("/img/banner-tablette.jpg") no-repeat bottom;
+        background: url("/assets/img/banner-tablette.jpg") no-repeat bottom;
         background-size: cover;
     }
 }
@@ -38,7 +38,7 @@
 @media screen and (min-width: 769px) and (max-width: 992px) {
     .blog__banner {
         height: 197px;
-        background: url("/img/banner-tablette.jpg") no-repeat bottom;
+        background: url("/assets/img/banner-tablette.jpg") no-repeat bottom;
         background-size: cover;
     } 
 
@@ -66,7 +66,7 @@
 @media screen and (min-width: 993px) {
     .blog__banner {
         height: 157px;
-        background: url("/img/banner.jpg") no-repeat bottom;
+        background: url("/assets/img/banner.jpg") no-repeat bottom;
         background-size: cover;
     }
 

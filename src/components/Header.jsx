@@ -6,6 +6,8 @@ let isBurgerMenuActive = false;
 
 export default function Header() {
 
+    // Add active class on burger menu button after a click on it
+
     const [ buttonClass, setButtonClass ] = useState("navbar-toggler border border-secondary border-opacity-50");
     
     function activeButtonClass() {
@@ -17,6 +19,8 @@ export default function Header() {
         };
     }
 
+    // Add active class on link menu according to URL pathname
+
     const allLink = document.querySelectorAll('.nav-link');
     const location = useLocation();
 
@@ -27,13 +31,13 @@ export default function Header() {
 
         if(location.pathname==='/'){
             document.getElementById('home-link').className = 'activeLink nav-link text-uppercase';
-        } else if (location.pathname==='/services') {
+        } else if (location.pathname==='/services/') {
             document.getElementById('services-link').className = 'activeLink nav-link text-uppercase';
-        } else if (location.pathname==='/portfolio') {
+        } else if (location.pathname==='/portfolio/') {
             document.getElementById('portfolio-link').className = 'activeLink nav-link text-uppercase';
-        } else if (location.pathname==='/blog') {
+        } else if (location.pathname==='/blog/') {
             document.getElementById('blog-link').className = 'activeLink nav-link text-uppercase';
-        } else if (location.pathname==='/contact') {
+        } else if (location.pathname==='/contact/') {
             document.getElementById('contact-link').className = 'activeLink nav-link text-uppercase';
         }
     }, [location]);
@@ -52,16 +56,16 @@ export default function Header() {
                             <Link id='home-link' className="nav-link text-white-50 text-uppercase link-light" to="/">Accueil</Link>
                         </li>
                         <li className="nav-item">
-                            <Link id='services-link' className="nav-link text-white-50 text-uppercase link-light" to="/services">Services</Link>
+                            <Link id='services-link' className="nav-link text-white-50 text-uppercase link-light" to="/services/">Services</Link>
                         </li>
                         <li className="nav-item">
-                            <Link id='portfolio-link' className="nav-link text-white-50 text-uppercase link-light" to="/portfolio">Réalisations</Link>
+                            <Link id='portfolio-link' className="nav-link text-white-50 text-uppercase link-light" to="/portfolio/">Réalisations</Link>
                         </li>
                         <li className="nav-item">
-                            <Link id='blog-link' className="nav-link text-white-50 text-uppercase link-light" to="/blog">Blog</Link>
+                            <Link id='blog-link' className="nav-link text-white-50 text-uppercase link-light" to="/blog/">Blog</Link>
                         </li>
                         <li className="nav-item">
-                            <Link id='contact-link' className="nav-link text-white-50 text-uppercase link-light" to="/contact">Me contacter</Link>
+                            <Link id='contact-link' className="nav-link text-white-50 text-uppercase link-light" to="/contact/">Me contacter</Link>
                         </li>
                     </ul>
                 </div>

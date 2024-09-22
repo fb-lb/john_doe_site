@@ -1,6 +1,16 @@
 import '../css/portfolio.css';
 import { PropTypes } from 'prop-types';
 
+Project.propTypes = {
+    srcImg: PropTypes.string,
+    altImg: PropTypes.string,
+    title: PropTypes.string,
+    description: PropTypes.string,
+    linkTitle: PropTypes.string,
+    link: PropTypes.string,
+    technology: PropTypes.string
+  };
+
 function Project(props) {
     return (
         <div className='portfolio__achievement col'>
@@ -17,16 +27,6 @@ function Project(props) {
     ); 
 }
 
-Project.propTypes = {
-    srcImg: PropTypes.string,
-    altImg: PropTypes.string,
-    title: PropTypes.string,
-    description: PropTypes.string,
-    linkTitle: PropTypes.string,
-    link: PropTypes.string,
-    technology: PropTypes.string
-  };
-
 export default function Portfolio() {
     return (
         <main className="portfolio">
@@ -36,7 +36,7 @@ export default function Portfolio() {
             <div className='portfolio__line'></div>
             <div className='portfolio__achievement-list row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3'>
                 <Project
-                    srcImg="/img/portfolio/fresh-food.jpg"
+                    srcImg="/assets/img/portfolio/fresh-food.jpg"
                     altImg="Panier de légumes vue du dessus contenant une aubergine, un poivron jaune, des radis, de la salade et du persil"
                     title="Fresh food"
                     description="Réalisation d'un site avec commande en ligne."
@@ -45,7 +45,7 @@ export default function Portfolio() {
                     technology="Site réalisé avec PHP et MySQL"
                 />
                 <Project
-                    srcImg="/img/portfolio/restaurant-japonais.jpg"
+                    srcImg="/assets/img/portfolio/restaurant-japonais.jpg"
                     alt="Cinq sushis au thon ou saumon ou crevettes entre deux rangées de trois maki thon avocat et saumon avocat"
                     title="Restaurant Akira"
                     description="Réalisation d'un site vitrine."
@@ -54,7 +54,7 @@ export default function Portfolio() {
                     technology="Site réalisé avec WordPress"
                 />
                 <Project
-                    srcImg="/img/portfolio/espace-bien-etre.jpg"
+                    srcImg="/assets/img/portfolio/espace-bien-etre.jpg"
                     alt="Représentation d'une tête de bouddha avec une fleur de lotus avec à droite un empilement pyramidal de quatre galet. Les différents éléments flottent sur l'eau et il y a un coucher de soleil en arrière plan."
                     title="Espace bien-être"
                     description="Réalisation d'un site vitrine pour un praticien de bien-être."
