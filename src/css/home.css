@@ -81,7 +81,7 @@
 
 @media screen and (max-width: 768px) {
   .home .principal {
-    background: url("/img/hero-bg-mobile.jpg") no-repeat center;
+    background: url("/assets/img/hero-bg-mobile.jpg") no-repeat center;
     height: 768px;
   }
 
@@ -97,7 +97,7 @@
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
   .home .principal {
-    background: url("/img/hero-bg-tablette.jpg") no-repeat center;
+    background: url("/assets/img/hero-bg-tablette.jpg") no-repeat center;
     background-size: cover;
     height: 1040px;
   }
@@ -123,7 +123,7 @@
   
   
   .home .principal {
-    background: url("/img/hero-bg.jpg") no-repeat center;
+    background: url("/assets/img/hero-bg.jpg") no-repeat center;
     height: 810px;
     background-size: cover;
   }

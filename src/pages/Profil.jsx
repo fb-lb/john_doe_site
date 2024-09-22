@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 
 export default function Profil() {
 
+    // Retrieve information on GitHub profil
+
     const [user, setUser] = useState({});
 
     const getUser = async() => {

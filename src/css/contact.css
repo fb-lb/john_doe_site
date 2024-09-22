@@ -1,5 +1,5 @@
 .contact {
-    background: url('img/contact-bg.jpg') no-repeat center;
+    background: url('/assets/img/contact-bg.jpg') no-repeat center;
     display: flex;
 }
 

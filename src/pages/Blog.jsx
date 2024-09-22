@@ -1,6 +1,15 @@
 import '../css/blog.css';
 import { PropTypes } from 'prop-types';
 
+Project.propTypes = {
+    srcImg: PropTypes.string,
+    altImg: PropTypes.string,
+    title: PropTypes.string,
+    description: PropTypes.string,
+    timeAttr: PropTypes.string,
+    date: PropTypes.string
+  };
+
 function Project(props) {
     return (
         <div className='blog__article col'>
@@ -17,15 +26,6 @@ function Project(props) {
     ); 
 }
 
-Project.propTypes = {
-    srcImg: PropTypes.string,
-    altImg: PropTypes.string,
-    title: PropTypes.string,
-    description: PropTypes.string,
-    timeAttr: PropTypes.string,
-    date: PropTypes.string
-  };
-
 export default function Blog() {
     return(
         <main className="blog">
@@ -35,7 +35,7 @@ export default function Blog() {
             <div className='blog__line'></div>
             <div className='blog__article-list row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3'>
                 <Project
-                    srcImg="/img/blog/coder.jpg"
+                    srcImg="/assets/img/blog/coder.jpg"
                     altImg="Code HTML dans un environnement de développement intégré."
                     title="Coder son site en HTML/CSS"
                     description="Some quick example text to build on the card title and make up the bulk of the card's content."
@@ -43,7 +43,7 @@ export default function Blog() {
                     date="22 août 2022"
                 />
                 <Project
-                    srcImg="/img/blog/croissance.jpg"
+                    srcImg="/assets/img/blog/croissance.jpg"
                     altImg="Quatre tas de pièces empilées les unes sur les autres avec de plus en plus de pièces, de gauche à droite, avec une plante qui pousse sur chacun des tas de pièces. A droite des tas de pièce, il y a un bocal contenant un nombre important plus important de pièce et il y a aussi une plante qui pousse."
                     title="Vendre ses produits sur le web"
                     description="Some quick example text to build on the card title and make up the bulk of the card's content."
@@ -51,7 +51,7 @@ export default function Blog() {
                     date="20 août 2022"
                 />
                 <Project
-                    srcImg="/img/blog/google.jpg"
+                    srcImg="/assets/img/blog/google.jpg"
                     altImg="Ordinateur portable sur une tableau de jardin en bois. Le moteur de recherche Google est ouvert en plein écran. Un téléphone se trouve à gauche de l'ordinateur. Photo prise en extérieur."
                     title="Se positionner sur Google"
                     description="Some quick example text to build on the card title and make up the bulk of the card's content."
@@ -59,7 +59,7 @@ export default function Blog() {
                     date="1 août 2022"
                 />
                 <Project
-                    srcImg="/img/blog/screens.jpg"
+                    srcImg="/assets/img/blog/screens.jpg"
                     altImg="Bureau sur lequel se trouve une tablette, un ordinateur portable et un iMac Apple avec un clavier"
                     title="Coder en responsive design"
                     description="Some quick example text to build on the card title and make up the bulk of the card's content."
@@ -67,7 +67,7 @@ export default function Blog() {
                     date="31 juillet 2022"
                 />
                 <Project
-                    srcImg="/img/blog/seo.jpg"
+                    srcImg="/assets/img/blog/seo.jpg"
                     altImg="Ensemble de mot en lien avec le référencement web. Les mots sont écrits en blanc sur fond bleu. Certains mots sont tournés de 90 degrés."
                     title="Technique de référencement"
                     description="Some quick example text to build on the card title and make up the bulk of the card's content."
@@ -75,7 +75,7 @@ export default function Blog() {
                     date="30 juillet 2022"
                 />
                 <Project
-                    srcImg="/img/blog/technos.png"
+                    srcImg="/assets/img/blog/technos.png"
                     altImg="Ensemble de logos de différentes technologies du développement web."
                     title="Apprendre à coder"
                     description="Some quick example text to build on the card title and make up the bulk of the card's content."

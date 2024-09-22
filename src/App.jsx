@@ -15,47 +15,50 @@ import { useEffect } from 'react';
 export default function App() {
 
   const location = useLocation();
+
   let metaRobots = document.createElement("meta");
+  metaRobots.setAttribute("id", "robots");
   metaRobots.setAttribute("name", "robots");
   metaRobots.setAttribute("content", "noindex");
+
   let head = document.querySelector('head');
-  
+
   useEffect(() => {
       // Not display header and footer on Profil Page
-      let header = document.querySelector('header');
-      let footer = document.querySelector('footer');
-      
-      if (location.pathname==="/profil"){
-          if (header!= null) {
-              header.classList.add("display");
-          }
-          if (footer!= null) {
-              footer.classList.add("display");
-          }
+
+      const header = document.querySelector('header');
+      const footer = document.querySelector('footer');
+
+      if (location.pathname==="/profil/" || location.pathname==="/profil"){
+        header.classList.add("display");
+        footer.classList.add("display");
       } else {
-          header.classList.remove("display");
-          footer.classList.remove("display");
+        header.classList.remove("display");
+        footer.classList.remove("display");
       }
 
       // No index on legal mentions page
-      if (location.pathname === "/mentions-legales" && !head.lastChild.hasAttribute("name")){
+
+      let robots = document.getElementById('robots');
+
+      if (location.pathname === "/mentions-legales/" && robots == null){
         head.appendChild(metaRobots);
-      } else if (location.pathname != "/mentions-legales" && head.lastChild.hasAttribute("name")) {
-        head.lastChild.remove();
-      }
-  });
+      } else if (location.pathname != "/mentions-legales/" && robots != null) {
+        robots.remove();
+      } 
+  }, [location]);
 
   return (
     <>
       <Header/>
       <Routes>
         <Route path="/" element={<Home/>}></Route>
-        <Route path="/services" element={<Services/>}></Route>
-        <Route path="/portfolio" element={<Portfolio/>}></Route>
-        <Route path="/blog" element={<Blog/>}></Route>
-        <Route path="/contact" element={<Contact/>}></Route>
-        <Route path="/mentions-legales" element={<LegalMentions/>}></Route>
-        <Route path="/profil" element={<Profil/>}></Route>
+        <Route path="/services/" element={<Services/>}></Route>
+        <Route path="/portfolio/" element={<Portfolio/>}></Route>
+        <Route path="/blog/" element={<Blog/>}></Route>
+        <Route path="/contact/" element={<Contact/>}></Route>
+        <Route path="/mentions-legales/" element={<LegalMentions/>}></Route>
+        <Route path="/profil/" element={<Profil/>}></Route>
       </Routes>
       <Footer/>
     </>

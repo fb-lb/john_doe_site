@@ -2,6 +2,8 @@ import '../css/services.css';
 
 export default function Services() {
 
+    // Change icon color while hovering corresponding service
+    
     function hover(e) {
         let path = document.getElementById(e.target.children[0].children[0].id);
         path.setAttribute('fill', "#cde1f8");
